@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathEffect
@@ -215,7 +216,7 @@ fun VectorDiagram(
                     Text(
                         text = "${"%.1f".format(vector.complex.amplitude)} ∠${"%.0f".format(vector.complex.phaseDeg)}°",
                         fontSize = 12.sp,
-                        fontWeight = FontWeight.SemiBold,
+                        fontWeight = FontWeight.Bold,
                         fontFamily = FontFamily.Monospace,
                         color = DiagramPalette.labelText
                     )
